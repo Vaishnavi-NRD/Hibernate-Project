@@ -6,6 +6,10 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 @Entity
+/*if a class is annotated by Entity then it represents a table in DB
+	 * An Employee class is created where id is generated automatically 
+	 * & the necessary details are declared in private
+	 * Encapsulation is done to access them*/
 public class Employee {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)

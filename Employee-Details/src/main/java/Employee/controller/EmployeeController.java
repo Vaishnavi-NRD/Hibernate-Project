@@ -6,6 +6,9 @@ import Employee.dao.EmployeeDao;
 import Employee.dto.Employee;
 
 public class EmployeeController {
+	/*Choice is taken from User for performing required actions 
+	Creating an object(EmployeeDao) for mapping of the persistence logic 
+	Further all operations are done & stored in DB */
 	static Scanner ip = new Scanner(System.in);
 	static EmployeeDao dao=new EmployeeDao();
 

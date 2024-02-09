@@ -10,8 +10,14 @@ import Employee.dto.Employee;
 
 
 public class EmployeeDao {
+	/*EntityManager provides all the necessary functions required for CRUD
+	Persistence is a class of JPA
+	Persistence name is mapped as given in .xml file
+	createEntityManagerFactory-> its an helper method of Persistence class &
+	it creates implementation object & returns reference
+	*/
 	EntityManager manager = Persistence.createEntityManagerFactory("jpa").createEntityManager();
-
+	/*Further Persistence Logic is written for performing CRUD operations & Validation*/
 	public Employee saveEmployee(Employee employee) {
 		EntityTransaction transaction = manager.getTransaction();
 		manager.persist(employee);
